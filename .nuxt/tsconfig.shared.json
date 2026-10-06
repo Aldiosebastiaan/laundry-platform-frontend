@@ -1,0 +1,147 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@unhead/vue": [
+        "../node_modules/@unhead/vue"
+      ],
+      "@nuxt/devtools": [
+        "../node_modules/@nuxt/devtools"
+      ],
+      "@vue/runtime-core": [
+        "../node_modules/@vue/runtime-core"
+      ],
+      "@vue/compiler-sfc": [
+        "../node_modules/@vue/compiler-sfc"
+      ],
+      "@nuxt/schema": [
+        "../node_modules/@nuxt/schema"
+      ],
+      "nuxt": [
+        "../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt"
+      ],
+      "vite/client": [
+        "../node_modules/vite/client"
+      ],
+      "nitropack/types": [
+        "../node_modules/nitropack/types"
+      ],
+      "nitropack/runtime": [
+        "../node_modules/nitropack/runtime"
+      ],
+      "nitropack": [
+        "../node_modules/nitropack"
+      ],
+      "defu": [
+        "../node_modules/defu"
+      ],
+      "h3": [
+        "../node_modules/h3"
+      ],
+      "consola": [
+        "../node_modules/consola"
+      ],
+      "ofetch": [
+        "../node_modules/ofetch"
+      ],
+      "crossws": [
+        "../node_modules/crossws"
+      ],
+      "~": [
+        "../app"
+      ],
+      "~/*": [
+        "../app/*"
+      ],
+      "@": [
+        "../app"
+      ],
+      "@/*": [
+        "../app/*"
+      ],
+      "~~": [
+        ".."
+      ],
+      "~~/*": [
+        "../*"
+      ],
+      "@@": [
+        ".."
+      ],
+      "@@/*": [
+        "../*"
+      ],
+      "#shared": [
+        "../shared"
+      ],
+      "#shared/*": [
+        "../shared/*"
+      ],
+      "#server": [
+        "../server"
+      ],
+      "#server/*": [
+        "../server/*"
+      ],
+      "#app": [
+        "../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app"
+      ],
+      "#app/*": [
+        "../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/*"
+      ],
+      "vue-demi": [
+        "../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/compat/vue-demi"
+      ],
+      "#primevue-style": [
+        "./primevue-style.mjs"
+      ],
+      "#vue-router": [
+        "../node_modules/.pnpm/vue-router@5.3.1_@vue+compiler-sfc@3.5.43_esbuild@0.28.2_pinia@4.0.3_@vue+devtools-api@_ba35b9bab5febdf8c30f2687bc2b928b/node_modules/vue-router"
+      ],
+      "#unhead/composables": [
+        "../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/head/runtime/composables"
+      ],
+      "#imports": [
+        "./imports"
+      ],
+      "#app-manifest": [
+        "./manifest/meta/4b9c652f-a216-44ad-9916-7757997fff1d.json"
+      ],
+      "#build": [
+        "."
+      ],
+      "#build/*": [
+        "./*"
+      ]
+    },
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "allowJs": true,
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "allowArbitraryExtensions": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitOverride": true,
+    "module": "preserve",
+    "noEmit": true,
+    "types": [],
+    "moduleResolution": "Bundler",
+    "useDefineForClassFields": true,
+    "noImplicitThis": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "./nuxt.shared.d.ts",
+    "../shared/**/*",
+    "../modules/*/shared/**/*",
+    "../layers/*/shared/**/*",
+    "../*.d.ts",
+    "../layers/*/*.d.ts"
+  ],
+  "exclude": []
+}
