@@ -3,6 +3,7 @@ import type { ComponentProps } from "../../node_modules/.pnpm/vue-component-type
 
 declare module 'nuxt/app' {
   interface NuxtLayouts {
+    default: ComponentProps<typeof import("/Users/macbookair/develop/laundry-platform/frontend/app/layouts/default.vue").default>
   }
   export type LayoutKey = keyof NuxtLayouts extends never ? string : keyof NuxtLayouts
   interface PageMeta {

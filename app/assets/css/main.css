@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Hanken Grotesk Global Font */
+  --font-sans: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Primary Palette: #00685f */
+  --p-primary-50: #e6f5f3;
+  --p-primary-100: #c2e7e3;
+  --p-primary-200: #99d7d1;
+  --p-primary-300: #6ec7bd;
+  --p-primary-400: #3db6a9;
+  --p-primary-500: #00685f;
+  --p-primary-600: #005d55;
+  --p-primary-700: #004f48;
+  --p-primary-800: #00403b;
+  --p-primary-900: #002d29;
+  --p-primary-950: #001917;
+
+  /* Primary Button / Active Tokens */
+  --p-primary-color: #00685f;
+  --p-primary-contrast-color: #ffffff;
+  --p-primary-hover-color: #005d55;
+  --p-primary-active-color: #004f48;
+}
+
+html, body {
+  font-family: var(--font-sans);
+  color: #1e293b;
+  background-color: #f8fafc;
+  -webkit-font-smoothing: antialiased;
+}
