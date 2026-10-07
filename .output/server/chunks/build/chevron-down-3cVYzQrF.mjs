@@ -1,0 +1,33 @@
+import { b } from './core-aCRgtkIU.mjs';
+import { defineComponent, openBlock, createBlock, unref, normalizeProps, guardReactiveProps } from 'vue';
+
+//#region node_modules/.pnpm/@primeicons+core@8.0.2/node_modules/@primeicons/core/dist/esm/icons/chevron-down.mjs
+var o = {
+	name: "chevron-down",
+	svg: {
+		xmlns: "http://www.w3.org/2000/svg",
+		width: 20,
+		height: 20,
+		viewBox: "0 0 20 20",
+		fill: "none"
+	},
+	nodes: [["path", {
+		d: "M14.4697 6.96973C14.7626 6.67684 15.2374 6.67684 15.5303 6.96973C15.8232 7.26262 15.8232 7.73738 15.5303 8.03028L10.5303 13.0303C10.2374 13.3232 9.76262 13.3232 9.46972 13.0303L4.46972 8.03028C4.17683 7.73738 4.17683 7.26262 4.46972 6.96973C4.76262 6.67684 5.23738 6.67684 5.53027 6.96973L10 11.4395L14.4697 6.96973Z",
+		fill: "currentColor",
+		key: "a1s1p6"
+	}]]
+};
+//#endregion
+//#region node_modules/.pnpm/@primeicons+vue@8.0.2_vue@3.5.43/node_modules/@primeicons/vue/dist/esm/icons/chevron-down.mjs
+var h$1 = /* @__PURE__ */ defineComponent({
+	name: "ChevronDown",
+	inheritAttrs: false,
+	__name: "chevron-down",
+	setup(i) {
+		const { Icon: o$1 } = b(o);
+		return (e, f) => (openBlock(), createBlock(unref(o$1), normalizeProps(guardReactiveProps(e.$attrs)), null, 16));
+	}
+});
+
+export { h$1 as h };
+//# sourceMappingURL=chevron-down-3cVYzQrF.mjs.map

@@ -14,6 +14,8 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 
+export const LayoutAppHeader: typeof import("../app/components/layout/AppHeader.vue")['default']
+export const LayoutAppSidebar: typeof import("../app/components/layout/AppSidebar.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/components/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/components/nuxt-layout")['default']
 export const NuxtErrorBoundary: typeof import("../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
@@ -214,7 +216,7 @@ export const Tag: typeof import("primevue/tag")['default']
 export const Terminal: typeof import("primevue/terminal")['default']
 export const Form: typeof import("@primevue/forms/form")['default']
 export const FormField: typeof import("@primevue/forms/formfield")['default']
-export const NuxtPage: typeof import("../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/pages/runtime/page-placeholder")['default']
+export const NuxtPage: typeof import("../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/pages/runtime/page")['default']
 export const NoScript: typeof import("../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/head/runtime/components")['NoScript']
 export const Link: typeof import("../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/head/runtime/components")['Link']
 export const Base: typeof import("../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/head/runtime/components")['Base']
@@ -225,6 +227,8 @@ export const Head: typeof import("../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin
 export const Html: typeof import("../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/head/runtime/components")['Body']
 export const NuxtIsland: typeof import("../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/components/nuxt-island")['default']
+export const LazyLayoutAppHeader: LazyComponent<typeof import("../app/components/layout/AppHeader.vue")['default']>
+export const LazyLayoutAppSidebar: LazyComponent<typeof import("../app/components/layout/AppSidebar.vue")['default']>
 export const LazyNuxtWelcome: LazyComponent<typeof import("../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/components/welcome.vue")['default']>
 export const LazyNuxtLayout: LazyComponent<typeof import("../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
 export const LazyNuxtErrorBoundary: LazyComponent<typeof import("../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>
@@ -425,7 +429,7 @@ export const LazyTag: LazyComponent<typeof import("primevue/tag")['default']>
 export const LazyTerminal: LazyComponent<typeof import("primevue/terminal")['default']>
 export const LazyForm: LazyComponent<typeof import("@primevue/forms/form")['default']>
 export const LazyFormField: LazyComponent<typeof import("@primevue/forms/formfield")['default']>
-export const LazyNuxtPage: LazyComponent<typeof import("../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/pages/runtime/page-placeholder")['default']>
+export const LazyNuxtPage: LazyComponent<typeof import("../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/pages/runtime/page")['default']>
 export const LazyNoScript: LazyComponent<typeof import("../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/head/runtime/components")['NoScript']>
 export const LazyLink: LazyComponent<typeof import("../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/head/runtime/components")['Link']>
 export const LazyBase: LazyComponent<typeof import("../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/head/runtime/components")['Base']>

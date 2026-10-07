@@ -95,6 +95,24 @@
       "#internal/nuxt/paths": [
         "../node_modules/.pnpm/@nuxt+nitro-server@4.5.2_f2b7462a77fb160ebf73e0f3f260e7b8/node_modules/@nuxt/nitro-server/dist/runtime/utils/paths"
       ],
+      "#layers/workflow-builder": [
+        "../layers/workflow-builder"
+      ],
+      "#layers/workflow-builder/*": [
+        "../layers/workflow-builder/*"
+      ],
+      "#layers/form-builder": [
+        "../layers/form-builder"
+      ],
+      "#layers/form-builder/*": [
+        "../layers/form-builder/*"
+      ],
+      "#layers/builder": [
+        "../layers/builder"
+      ],
+      "#layers/builder/*": [
+        "../layers/builder/*"
+      ],
       "#primevue-style": [
         "./primevue-style.mjs"
       ],
@@ -139,7 +157,13 @@
     "../node_modules/runtime/server",
     "../node_modules/dist/runtime/server",
     "../server/**/*",
+    "../layers/workflow-builder/server/**/*",
+    "../layers/form-builder/server/**/*",
+    "../layers/builder/server/**/*",
     "../shared/**/*.d.ts",
+    "../layers/workflow-builder/shared/**/*.d.ts",
+    "../layers/form-builder/shared/**/*.d.ts",
+    "../layers/builder/shared/**/*.d.ts",
     "./types/nitro.d.ts"
   ],
   "exclude": [

@@ -1,0 +1,1 @@
+import{L as e,p as t,u as n,x as r}from"./BQHyKCNA.js";import{u as i}from"./Dn_iTt60.js";var a={class:`flex items-center justify-center p-12`},o=r({__name:`index`,setup(r){return i(`/dashboard`),(r,i)=>(e(),t(`div`,a,[...i[0]||=[n(`span`,{class:`text-sm text-slate-500`},`Mengarahkan ke dashboard...`,-1)]]))}});export{o as default};

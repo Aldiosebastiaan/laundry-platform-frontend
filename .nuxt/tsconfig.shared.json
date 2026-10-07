@@ -46,6 +46,24 @@
       "crossws": [
         "../node_modules/crossws"
       ],
+      "#layers/workflow-builder": [
+        "../layers/workflow-builder"
+      ],
+      "#layers/workflow-builder/*": [
+        "../layers/workflow-builder/*"
+      ],
+      "#layers/form-builder": [
+        "../layers/form-builder"
+      ],
+      "#layers/form-builder/*": [
+        "../layers/form-builder/*"
+      ],
+      "#layers/builder": [
+        "../layers/builder"
+      ],
+      "#layers/builder/*": [
+        "../layers/builder/*"
+      ],
       "~": [
         "../app"
       ],
@@ -104,7 +122,7 @@
         "./imports"
       ],
       "#app-manifest": [
-        "./manifest/meta/4b9c652f-a216-44ad-9916-7757997fff1d.json"
+        "./manifest/meta/dev.json"
       ],
       "#build": [
         "."

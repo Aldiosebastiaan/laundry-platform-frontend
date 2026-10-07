@@ -1,0 +1,828 @@
+import { c } from './classnames-ryN3v2bf.mjs';
+import { X as A$1, a8 as q, l, B as BaseStyle } from '../virtual/entry.mjs';
+import { s as script$2 } from './basecomponent-xyj7Pl8r.mjs';
+import { g as getVNodeProp } from './utils-CwiYQ8nb.mjs';
+import { openBlock, createElementBlock, mergeProps, Fragment, renderList, createBlock, resolveDynamicComponent, createElementVNode, createCommentVNode } from 'vue';
+import 'nostics';
+import 'nostics/formatters/ansi';
+import '../nitro/nitro.mjs';
+import 'node:http';
+import 'node:https';
+import 'node:events';
+import 'node:buffer';
+import 'node:fs';
+import 'node:path';
+import 'node:crypto';
+import '@primevue/core/base/style';
+import '@primevue/core/basecomponent/style';
+import '@primeuix/styles/autocomplete';
+import '@primeuix/utils/object';
+import '@primeuix/styles/cascadeselect';
+import '@primeuix/styles/checkbox';
+import '@primeuix/styles/checkboxgroup';
+import '@primeuix/styles/colorpicker';
+import '@primeuix/styles/datepicker';
+import '@primeuix/styles/floatlabel';
+import '@primeuix/styles/iconfield';
+import '@primeuix/styles/iftalabel';
+import '@primeuix/styles/inputcolor';
+import '@primeuix/styles/inputgroup';
+import '@primeuix/styles/inputnumber';
+import '@primeuix/styles/inputotp';
+import '@primeuix/styles/inputtags';
+import '@primeuix/styles/inputtext';
+import '@primeuix/styles/knob';
+import '@primeuix/styles/label';
+import '@primeuix/styles/listbox';
+import '@primeuix/styles/multiselect';
+import '@primeuix/styles/password';
+import '@primeuix/styles/radiobutton';
+import '@primeuix/styles/radiobuttongroup';
+import '@primeuix/styles/rating';
+import '@primeuix/styles/select';
+import '@primeuix/styles/selectbutton';
+import '@primeuix/styles/slider';
+import '@primeuix/styles/textarea';
+import '@primeuix/styles/togglebutton';
+import '@primeuix/styles/toggleswitch';
+import '@primeuix/styles/treeselect';
+import '@primeuix/styles/button';
+import '@primeuix/styles/buttongroup';
+import '@primeuix/styles/speeddial';
+import '@primeuix/styles/splitbutton';
+import '@primeuix/styles/datatable';
+import '@primeuix/styles/dataview';
+import '@primeuix/styles/orderlist';
+import '@primeuix/styles/organizationchart';
+import '@primeuix/styles/paginator';
+import '@primeuix/styles/picklist';
+import '@primeuix/styles/tree';
+import '@primeuix/styles/treetable';
+import '@primeuix/styles/timeline';
+import '@primeuix/styles/virtualscroller';
+import '@primeuix/styles/accordion';
+import '@primeuix/styles/card';
+import '@primeuix/styles/divider';
+import '@primeuix/styles/fieldset';
+import '@primeuix/styles/panel';
+import '@primeuix/styles/scrollarea';
+import '@primeuix/styles/scrollpanel';
+import '@primeuix/styles/splitter';
+import '@primeuix/styles/stepper';
+import '@primeuix/styles/tabs';
+import '@primeuix/styles/toolbar';
+import '@primeuix/styles/confirmdialog';
+import '@primeuix/styles/confirmpopup';
+import '@primeuix/styles/dialog';
+import '@primeuix/styles/drawer';
+import '@primeuix/styles/popover';
+import '@primeuix/styles/fileupload';
+import '@primeuix/styles/breadcrumb';
+import '@primeuix/styles/commandmenu';
+import '@primeuix/styles/contextmenu';
+import '@primeuix/styles/dock';
+import '@primeuix/styles/menu';
+import '@primeuix/styles/menubar';
+import '@primeuix/styles/megamenu';
+import '@primeuix/styles/panelmenu';
+import '@primeuix/styles/sidebar';
+import '@primeuix/styles/steps';
+import '@primeuix/styles/tieredmenu';
+import '@primeuix/styles/message';
+import '@primeuix/styles/toast';
+import '@primeuix/styles/carousel';
+import '@primeuix/styles/galleria';
+import '@primeuix/styles/gallery';
+import '@primeuix/styles/compare';
+import '@primeuix/styles/image';
+import '@primeuix/styles/imagecompare';
+import '@primeuix/styles/avatar';
+import '@primeuix/styles/badge';
+import '@primeuix/styles/blockui';
+import '@primeuix/styles/chip';
+import '@primeuix/styles/inplace';
+import '@primeuix/styles/metergroup';
+import '@primeuix/styles/overlaybadge';
+import '@primeuix/styles/scrolltop';
+import '@primeuix/styles/skeleton';
+import '@primeuix/styles/progressbar';
+import '@primeuix/styles/tag';
+import '@primeuix/styles/terminal';
+import '@primevue/forms/form/style';
+import '@primevue/forms/formfield/style';
+import '@primeuix/styles/tooltip';
+import '@primeuix/styles/ripple';
+import '@primeuix/styled';
+import 'node:url';
+import '@iconify/utils';
+import 'consola';
+import 'vue-router';
+import '@vue/shared';
+import 'pinia';
+import '@iconify/vue';
+import 'vue/server-renderer';
+import 'unhead/utils';
+import '../routes/renderer.mjs';
+import 'unhead/server';
+import 'unhead/legacy';
+import 'unhead/plugins';
+import 'vue-bundle-renderer/runtime';
+import 'devalue';
+
+//#endregion
+//#region node_modules/.pnpm/primevue@5.0.2_vue@3.5.43/node_modules/primevue/splitter/style/index.mjs
+var SplitterStyle = BaseStyle.extend({
+	name: "splitter",
+	style: "\n    .p-splitter {\n        display: flex;\n        flex-wrap: nowrap;\n        border: 1px solid dt('splitter.border.color');\n        background: dt('splitter.background');\n        border-radius: dt('border.radius.md');\n        color: dt('splitter.color');\n    }\n\n    .p-splitter-vertical {\n        flex-direction: column;\n    }\n\n    .p-splitter-gutter {\n        flex-grow: 0;\n        flex-shrink: 0;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        z-index: 1;\n        background: dt('splitter.gutter.background');\n        position: relative;\n    }\n\n    .p-splitter-gutter::before {\n        content: '';\n        position: absolute;\n    }\n\n    .p-splitter-gutter-handle {\n        border-radius: dt('splitter.handle.border.radius');\n        background: dt('splitter.handle.background');\n        transition:\n            outline-color dt('splitter.transition.duration'),\n            box-shadow dt('splitter.transition.duration');\n        outline-color: transparent;\n    }\n\n    .p-splitter-gutter:focus-visible {\n        outline: none;\n    }\n\n    .p-splitter-gutter:focus-visible > .p-splitter-gutter-handle {\n        box-shadow: dt('splitter.handle.focus.ring.shadow');\n        outline: dt('splitter.handle.focus.ring.width') dt('splitter.handle.focus.ring.style') dt('splitter.handle.focus.ring.color');\n        outline-offset: dt('splitter.handle.focus.ring.offset');\n    }\n\n    .p-splitter[data-orientation='horizontal'][data-resizing] {\n        cursor: col-resize;\n        user-select: none;\n    }\n\n    .p-splitter[data-orientation='vertical'][data-resizing] {\n        cursor: row-resize;\n        user-select: none;\n    }\n\n    .p-splitter[data-orientation='horizontal'] > .p-splitter-gutter > .p-splitter-gutter-handle {\n        height: dt('splitter.handle.size');\n        width: 100%;\n    }\n\n    .p-splitter[data-orientation='vertical'] > .p-splitter-gutter > .p-splitter-gutter-handle {\n        width: dt('splitter.handle.size');\n        height: 100%;\n    }\n\n    .p-splitter-panel:has(> .p-splitter) {\n        display: flex;\n    }\n\n    .p-splitter-panel > .p-splitter {\n        flex-grow: 1;\n        border: 0 none;\n    }\n\n    .p-splitter-gutter[data-orientation='horizontal']{\n        width: 1px;\n        cursor: col-resize;\n    }\n\n    .p-splitter-gutter[data-orientation='horizontal']::before {\n        content: '';\n        width: 5px;\n        position: absolute;\n        left: 50%;\n        top: 0;\n        bottom: 0;\n        transform: translateX(-50%);\n    }\n\n    .p-splitter-gutter[data-orientation='vertical']{\n        height: 1px;\n        cursor: row-resize;\n    }\n\n    .p-splitter-gutter[data-orientation='vertical']::before {\n        content: '';\n        height: 5px;\n        position: absolute;\n        left: 0;\n        top: 50%;\n        right: 0;\n        transform: translateY(-50%);\n    }\n\n    .p-splitter-gutter[data-disabled] {\n        cursor: default;\n        pointer-events: none;\n        opacity: 0.4;\n    }\n",
+	classes: {
+		root: function root(_ref) {
+			return ["p-splitter p-component", "p-splitter-" + _ref.props.layout];
+		},
+		gutter: "p-splitter-gutter",
+		gutterHandle: "p-splitter-gutter-handle"
+	}
+});
+//#endregion
+//#region node_modules/.pnpm/primevue@5.0.2_vue@3.5.43/node_modules/primevue/splitter/index.mjs
+var script$1 = {
+	name: "BaseSplitter",
+	"extends": script$2,
+	props: {
+		layout: {
+			type: String,
+			"default": "horizontal"
+		},
+		gutterSize: {
+			type: Number,
+			"default": 4
+		},
+		stateKey: {
+			type: String,
+			"default": null
+		},
+		stateStorage: {
+			type: String,
+			"default": "session"
+		},
+		step: {
+			type: Number,
+			"default": 5
+		},
+		disabled: {
+			type: Boolean,
+			"default": false
+		},
+		sizes: {
+			type: Array,
+			"default": null
+		}
+	},
+	style: SplitterStyle,
+	provide: function provide() {
+		return {
+			$pcSplitter: this,
+			$parentInstance: this
+		};
+	}
+};
+function _typeof(o) {
+	"@babel/helpers - typeof";
+	return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(o) {
+		return typeof o;
+	} : function(o) {
+		return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o;
+	}, _typeof(o);
+}
+function _defineProperty(e, r, t) {
+	return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, {
+		value: t,
+		enumerable: true,
+		configurable: true,
+		writable: true
+	}) : e[r] = t, e;
+}
+function _toPropertyKey(t) {
+	var i = _toPrimitive(t, "string");
+	return "symbol" == _typeof(i) ? i : i + "";
+}
+function _toPrimitive(t, r) {
+	if ("object" != _typeof(t) || !t) return t;
+	var e = t[Symbol.toPrimitive];
+	if (void 0 !== e) {
+		var i = e.call(t, r);
+		if ("object" != _typeof(i)) return i;
+		throw new TypeError("@@toPrimitive must return a primitive value.");
+	}
+	return ("string" === r ? String : Number)(t);
+}
+function _createForOfIteratorHelper(r, e) {
+	var t = "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"];
+	if (!t) {
+		if (Array.isArray(r) || (t = _unsupportedIterableToArray(r)) || e) {
+			t && (r = t);
+			var _n = 0, F = function F() {};
+			return {
+				s: F,
+				n: function n() {
+					return _n >= r.length ? { done: true } : {
+						done: false,
+						value: r[_n++]
+					};
+				},
+				e: function e(r) {
+					throw r;
+				},
+				f: F
+			};
+		}
+		throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+	}
+	var o, a = true, u = false;
+	return {
+		s: function s() {
+			t = t.call(r);
+		},
+		n: function n() {
+			var r = t.next();
+			return a = r.done, r;
+		},
+		e: function e(r) {
+			u = true, o = r;
+		},
+		f: function f() {
+			try {
+				a || null == t["return"] || t["return"]();
+			} finally {
+				if (u) throw o;
+			}
+		}
+	};
+}
+function _toConsumableArray(r) {
+	return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread();
+}
+function _nonIterableSpread() {
+	throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+function _unsupportedIterableToArray(r, a) {
+	if (r) {
+		if ("string" == typeof r) return _arrayLikeToArray(r, a);
+		var t = {}.toString.call(r).slice(8, -1);
+		return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0;
+	}
+}
+function _iterableToArray(r) {
+	if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r);
+}
+function _arrayWithoutHoles(r) {
+	if (Array.isArray(r)) return _arrayLikeToArray(r);
+}
+function _arrayLikeToArray(r, a) {
+	(null == a || a > r.length) && (a = r.length);
+	for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e];
+	return n;
+}
+var script = {
+	name: "Splitter",
+	"extends": script$1,
+	inheritAttrs: false,
+	emits: [
+		"resizestart",
+		"resizeend",
+		"resize",
+		"collapse",
+		"update:sizes"
+	],
+	pointerMoveListener: null,
+	pointerUpListener: null,
+	size: null,
+	gutterMidpoint: null,
+	initialSizes: [],
+	initialCollapsed: [],
+	reportedCollapsed: [],
+	initialTotal: 100,
+	timer: null,
+	data: function data() {
+		return {
+			panelSizes: [],
+			panelRegistry: [],
+			resizing: false,
+			prevPanelIndex: null
+		};
+	},
+	watch: {
+		panelSizeConfig: function panelSizeConfig() {
+			this.initializePanels();
+		},
+		sizes: {
+			deep: true,
+			handler: function handler(newSizes, oldSizes) {
+				if (this.resizing) return;
+				if (!newSizes || !this.panels.length) return;
+				if (oldSizes && oldSizes.length === newSizes.length && oldSizes.every(function(v, i) {
+					return v === newSizes[i];
+				})) return;
+				if (this.panelSizes.length === newSizes.length && this.panelSizes.every(function(v, i) {
+					return v === newSizes[i];
+				})) return;
+				for (var i = 0; i < this.panelRegistry.length; i++) {
+					var info = this.panelRegistry[i];
+					if (info !== null && info !== void 0 && info.collapsible) {
+						var _info$collapsedSize;
+						info.collapsed = newSizes[i] <= ((_info$collapsedSize = info.collapsedSize) !== null && _info$collapsedSize !== void 0 ? _info$collapsedSize : 0);
+					}
+				}
+				this.panelSizes = _toConsumableArray(newSizes);
+				this.applyPanelStyles();
+			}
+		}
+	},
+	mounted: function mounted() {
+		this.initializePanels();
+	},
+	beforeUnmount: function beforeUnmount() {
+		this.clearTimer();
+		this.unbindPointerListeners();
+	},
+	methods: {
+		isSplitterPanel: function isSplitterPanel(child) {
+			return child.type.name === "SplitterPanel";
+		},
+		getPanelSize: function getPanelSize(panel) {
+			var size = panel.props && l(panel.props.size) ? panel.props.size : null;
+			return size !== null && size !== void 0 ? size : 100 / this.panels.length;
+		},
+		buildPanelRegistry: function buildPanelRegistry() {
+			var _this$panelRegistry;
+			var prev = (_this$panelRegistry = this.panelRegistry) !== null && _this$panelRegistry !== void 0 ? _this$panelRegistry : [];
+			this.panelRegistry = this.panels.map(function(panel, i) {
+				var _existing$collapsed;
+				var existing = prev[i];
+				var minSize = getVNodeProp(panel, "minSize");
+				var maxSize = getVNodeProp(panel, "maxSize");
+				var collapsible = getVNodeProp(panel, "collapsible");
+				var collapsedSize = getVNodeProp(panel, "collapsedSize");
+				return {
+					index: i,
+					minSize: minSize !== null && minSize !== void 0 ? minSize : 0,
+					maxSize: maxSize !== null && maxSize !== void 0 ? maxSize : 100,
+					collapsible: collapsible !== null && collapsible !== void 0 ? collapsible : false,
+					collapsedSize: collapsedSize !== null && collapsedSize !== void 0 ? collapsedSize : 0,
+					collapsed: (_existing$collapsed = existing === null || existing === void 0 ? void 0 : existing.collapsed) !== null && _existing$collapsed !== void 0 ? _existing$collapsed : false
+				};
+			});
+		},
+		initializePanels: function initializePanels() {
+			var _this = this;
+			if (!this.panels || !this.panels.length) return;
+			this.buildPanelRegistry();
+			var initialized = false;
+			if (this.isStateful()) initialized = this.restoreState();
+			if (!initialized) {
+				var _this$sizes;
+				var sourceSizes = (_this$sizes = this.sizes) !== null && _this$sizes !== void 0 ? _this$sizes : null;
+				var _panelSizes = [];
+				this.panels.forEach(function(panel, i) {
+					var _sourceSizes$i;
+					_panelSizes[i] = (_sourceSizes$i = sourceSizes === null || sourceSizes === void 0 ? void 0 : sourceSizes[i]) !== null && _sourceSizes$i !== void 0 ? _sourceSizes$i : _this.getPanelSize(panel);
+				});
+				for (var i = 0; i < this.panelRegistry.length; i++) {
+					var _info$collapsedSize2;
+					var info = this.panelRegistry[i];
+					if (info !== null && info !== void 0 && info.collapsible && _panelSizes[i] <= ((_info$collapsedSize2 = info.collapsedSize) !== null && _info$collapsedSize2 !== void 0 ? _info$collapsedSize2 : 0)) info.collapsed = true;
+				}
+				this.panelSizes = _panelSizes;
+			}
+			this.$nextTick(function() {
+				return _this.applyPanelStyles();
+			});
+		},
+		getPanelChildren: function getPanelChildren() {
+			return _toConsumableArray(this.$el.children).filter(function(child) {
+				return child.getAttribute("data-pc-name") === "splitterpanel";
+			});
+		},
+		applyPanelStyles: function applyPanelStyles() {
+			var _this2 = this;
+			var children = this.getPanelChildren();
+			this.panels.forEach(function(_, i) {
+				var _this2$panelSizes$i;
+				var el = children[i];
+				if (!el) return;
+				var flexGrow = (_this2$panelSizes$i = _this2.panelSizes[i]) !== null && _this2$panelSizes$i !== void 0 ? _this2$panelSizes$i : 100 / _this2.panels.length;
+				el.style.flex = "".concat(flexGrow, " 1 0px");
+				el.style.overflow = "hidden";
+				if (_this2.horizontal) {
+					el.style.minWidth = "0";
+					el.style.minHeight = "";
+				} else {
+					el.style.minHeight = "0";
+					el.style.minWidth = "";
+				}
+				if (!el.id) el.id = _this2.panelIds[i];
+				el.setAttribute("data-index", i);
+				el.setAttribute("data-orientation", _this2.layout);
+				var info = _this2.panelRegistry[i];
+				if (info !== null && info !== void 0 && info.collapsed) el.setAttribute("data-collapsed", "");
+				else el.removeAttribute("data-collapsed");
+				if (_this2.resizing) el.setAttribute("data-resizing", "");
+				else el.removeAttribute("data-resizing");
+			});
+		},
+		getPanelMinSize: function getPanelMinSize(index) {
+			var _this$panelRegistry$i, _this$panelRegistry2;
+			return (_this$panelRegistry$i = (_this$panelRegistry2 = this.panelRegistry) === null || _this$panelRegistry2 === void 0 || (_this$panelRegistry2 = _this$panelRegistry2[index]) === null || _this$panelRegistry2 === void 0 ? void 0 : _this$panelRegistry2.minSize) !== null && _this$panelRegistry$i !== void 0 ? _this$panelRegistry$i : 0;
+		},
+		ariaControlsFor: function ariaControlsFor(index) {
+			var ids = [this.panelIds[index], this.panelIds[index + 1]].filter(Boolean);
+			return ids.length ? ids.join(" ") : void 0;
+		},
+		getPanelMaxSize: function getPanelMaxSize(index) {
+			var _this$panelRegistry$i2, _this$panelRegistry3;
+			return (_this$panelRegistry$i2 = (_this$panelRegistry3 = this.panelRegistry) === null || _this$panelRegistry3 === void 0 || (_this$panelRegistry3 = _this$panelRegistry3[index]) === null || _this$panelRegistry3 === void 0 ? void 0 : _this$panelRegistry3.maxSize) !== null && _this$panelRegistry$i2 !== void 0 ? _this$panelRegistry$i2 : 100;
+		},
+		isGutterDisabled: function isGutterDisabled() {
+			return this.disabled;
+		},
+		validatePanelSize: function validatePanelSize(rawSize, info, min, isKeyDown) {
+			var _info$collapsedSize3;
+			if (!(info !== null && info !== void 0 && info.collapsible)) return {
+				size: Math.max(rawSize, min),
+				collapsed: false
+			};
+			var collapsedSize = (_info$collapsedSize3 = info.collapsedSize) !== null && _info$collapsedSize3 !== void 0 ? _info$collapsedSize3 : 0;
+			if (rawSize >= min) return {
+				size: rawSize,
+				collapsed: false
+			};
+			if (isKeyDown) return {
+				size: collapsedSize,
+				collapsed: true
+			};
+			if (rawSize <= (collapsedSize + min) / 2) return {
+				size: collapsedSize,
+				collapsed: true
+			};
+			return {
+				size: min,
+				collapsed: false
+			};
+		},
+		getTotalPanelPx: function getTotalPanelPx() {
+			var children = this.getPanelChildren();
+			var total = 0;
+			var _iterator = _createForOfIteratorHelper(children), _step;
+			try {
+				for (_iterator.s(); !(_step = _iterator.n()).done;) {
+					var rect = _step.value.getBoundingClientRect();
+					total += this.horizontal ? rect.width : rect.height;
+				}
+			} catch (err) {
+				_iterator.e(err);
+			} finally {
+				_iterator.f();
+			}
+			return total;
+		},
+		onResizeStart: function onResizeStart(event, index, isKeyDown) {
+			this.size = this.getTotalPanelPx();
+			if (!isKeyDown) this.gutterMidpoint = this.horizontal ? event.clientX : event.clientY;
+			this.resizing = true;
+			this.prevPanelIndex = index;
+			this.initialSizes = _toConsumableArray(this.panelSizes);
+			this.initialCollapsed = this.panelRegistry.map(function(info) {
+				return info.collapsed;
+			});
+			this.reportedCollapsed = this.panelRegistry.map(function(info) {
+				return info.collapsed;
+			});
+			this.initialTotal = this.initialSizes.reduce(function(a, b) {
+				return a + b;
+			}, 0) || 100;
+			this.applyPanelStyles();
+			if (!isKeyDown) this.$emit("resizestart", {
+				originalEvent: event,
+				sizes: _toConsumableArray(this.initialSizes)
+			});
+		},
+		onResize: function onResize(event, step, isKeyDown) {
+			if (this.size === null || this.prevPanelIndex === null || this.initialSizes.length === 0) return;
+			var gutterIdx = this.prevPanelIndex;
+			var total = this.initialTotal;
+			var delta;
+			if (isKeyDown) delta = total * step / this.size;
+			else {
+				if (this.gutterMidpoint === null) return;
+				if (this.horizontal) {
+					if (q(this.$el)) delta = (this.gutterMidpoint - event.clientX) * total / this.size;
+					else delta = (event.clientX - this.gutterMidpoint) * total / this.size;
+				} else delta = (event.clientY - this.gutterMidpoint) * total / this.size;
+			}
+			var newSizes = _toConsumableArray(this.initialSizes);
+			for (var i = 0; i < this.panelRegistry.length; i++) if (this.initialCollapsed[i] !== void 0) this.panelRegistry[i].collapsed = this.initialCollapsed[i];
+			if (delta > 0) this.distribute(newSizes, gutterIdx, delta, isKeyDown, "forward");
+			else if (delta < 0) this.distribute(newSizes, gutterIdx + 1, -delta, isKeyDown, "backward");
+			for (var _i = 0; _i < this.panelRegistry.length; _i++) {
+				var info = this.panelRegistry[_i];
+				if (info.collapsed !== this.reportedCollapsed[_i]) {
+					this.reportedCollapsed[_i] = info.collapsed;
+					this.$emit("collapse", {
+						index: _i,
+						collapsed: info.collapsed,
+						sizes: _toConsumableArray(newSizes)
+					});
+				}
+			}
+			this.panelSizes = _toConsumableArray(newSizes);
+			this.applyPanelStyles();
+			this.$emit("update:sizes", _toConsumableArray(newSizes));
+			this.$emit("resize", {
+				originalEvent: event,
+				sizes: _toConsumableArray(newSizes)
+			});
+		},
+		distribute: function distribute(newSizes, growIdx, requested, isKeyDown, direction) {
+			var growInfo = this.panelRegistry[growIdx];
+			var max = this.getPanelMaxSize(growIdx);
+			var toGrow = Math.min(requested, Math.max(0, max - newSizes[growIdx]));
+			if (growInfo !== null && growInfo !== void 0 && growInfo.collapsible && growInfo.collapsed) {
+				var gapSize = this.getPanelMinSize(growIdx) - growInfo.collapsedSize;
+				var halfwayDelta = gapSize / 2;
+				if (isKeyDown) {
+					toGrow = Math.max(toGrow, gapSize);
+					toGrow = Math.min(toGrow, Math.max(0, max - newSizes[growIdx]));
+				} else if (toGrow < halfwayDelta) toGrow = 0;
+				else {
+					toGrow = Math.max(toGrow, gapSize);
+					toGrow = Math.min(toGrow, Math.max(0, max - newSizes[growIdx]));
+				}
+			}
+			var shrunk = 0;
+			var _iterator2 = _createForOfIteratorHelper(direction === "forward" ? this.range(growIdx + 1, newSizes.length, 1) : this.range(growIdx - 1, -1, -1)), _step2;
+			try {
+				for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+					var _info$collapsedSize4;
+					var i = _step2.value;
+					if (shrunk >= toGrow) break;
+					var info = this.panelRegistry[i];
+					var min = this.getPanelMinSize(i);
+					if (info !== null && info !== void 0 && info.collapsed) continue;
+					var effectiveMin = info !== null && info !== void 0 && info.collapsible ? (_info$collapsedSize4 = info.collapsedSize) !== null && _info$collapsedSize4 !== void 0 ? _info$collapsedSize4 : 0 : min;
+					var available = Math.max(0, newSizes[i] - effectiveMin);
+					var amount = Math.min(toGrow - shrunk, available);
+					var rawSize = newSizes[i] - amount;
+					var validated = this.validatePanelSize(rawSize, info, min, isKeyDown);
+					var actualShrunk = newSizes[i] - validated.size;
+					newSizes[i] = validated.size;
+					shrunk += actualShrunk;
+					if (info) info.collapsed = validated.collapsed;
+				}
+			} catch (err) {
+				_iterator2.e(err);
+			} finally {
+				_iterator2.f();
+			}
+			newSizes[growIdx] += shrunk;
+			if (growInfo !== null && growInfo !== void 0 && growInfo.collapsible && growInfo.collapsed && newSizes[growIdx] >= this.getPanelMinSize(growIdx)) growInfo.collapsed = false;
+		},
+		range: function range(start, end, step) {
+			var out = [];
+			for (var i = start; step > 0 ? i < end : i > end; i += step) out.push(i);
+			return out;
+		},
+		onResizeEnd: function onResizeEnd(event) {
+			if (this.isStateful()) this.saveState();
+			this.resizing = false;
+			this.$emit("resizeend", {
+				originalEvent: event,
+				sizes: _toConsumableArray(this.panelSizes)
+			});
+			this.applyPanelStyles();
+			this.clear();
+		},
+		repeat: function repeat(event, index, step) {
+			this.onResizeStart(event, index, true);
+			this.onResize(event, step, true);
+		},
+		setTimer: function setTimer(event, index, step) {
+			var _this3 = this;
+			if (!this.timer) {
+				this.$emit("resizestart", {
+					originalEvent: event,
+					sizes: _toConsumableArray(this.panelSizes)
+				});
+				this.repeat(event, index, step);
+				this.timer = setInterval(function() {
+					_this3.repeat(event, index, step);
+				}, 40);
+			}
+		},
+		clearTimer: function clearTimer() {
+			if (this.timer) {
+				clearInterval(this.timer);
+				this.timer = null;
+			}
+		},
+		onGutterKeyUp: function onGutterKeyUp() {
+			if (!this.timer) return;
+			this.clearTimer();
+			this.onResizeEnd();
+		},
+		onGutterKeyDown: function onGutterKeyDown(event, index) {
+			if (this.disabled) return;
+			switch (event.code) {
+				case "ArrowLeft":
+					if (this.horizontal) this.setTimer(event, index, this.step * -1);
+					event.preventDefault();
+					break;
+				case "ArrowRight":
+					if (this.horizontal) this.setTimer(event, index, this.step);
+					event.preventDefault();
+					break;
+				case "ArrowDown":
+					if (!this.horizontal) this.setTimer(event, index, this.step);
+					event.preventDefault();
+					break;
+				case "ArrowUp":
+					if (!this.horizontal) this.setTimer(event, index, this.step * -1);
+					event.preventDefault();
+			}
+		},
+		onGutterPointerDown: function onGutterPointerDown(event, index) {
+			if (this.disabled) return;
+			this.onResizeStart(event, index);
+			this.bindPointerListeners();
+		},
+		bindPointerListeners: function bindPointerListeners() {
+			var _this4 = this;
+			if (!this.pointerMoveListener) {
+				this.pointerMoveListener = function(event) {
+					return _this4.onResize(event);
+				};
+				(void 0).addEventListener("pointermove", this.pointerMoveListener);
+			}
+			if (!this.pointerUpListener) {
+				this.pointerUpListener = function(event) {
+					_this4.onResizeEnd(event);
+					_this4.unbindPointerListeners();
+				};
+				(void 0).addEventListener("pointerup", this.pointerUpListener);
+			}
+		},
+		unbindPointerListeners: function unbindPointerListeners() {
+			if (this.pointerMoveListener) {
+				(void 0).removeEventListener("pointermove", this.pointerMoveListener);
+				this.pointerMoveListener = null;
+			}
+			if (this.pointerUpListener) {
+				(void 0).removeEventListener("pointerup", this.pointerUpListener);
+				this.pointerUpListener = null;
+			}
+		},
+		clear: function clear() {
+			this.size = null;
+			this.gutterMidpoint = null;
+			this.initialSizes = [];
+			this.initialCollapsed = [];
+			this.reportedCollapsed = [];
+			this.initialTotal = 100;
+			this.prevPanelIndex = null;
+		},
+		isStateful: function isStateful() {
+			return this.stateKey != null;
+		},
+		getStorage: function getStorage() {
+			switch (this.stateStorage) {
+				case "local": return (void 0).localStorage;
+				case "session": return (void 0).sessionStorage;
+				default: throw new Error(this.stateStorage + " is not a valid value for the state storage, supported values are \"local\" and \"session\".");
+			}
+		},
+		saveState: function saveState() {
+			if (A$1(this.panelSizes)) this.getStorage().setItem(this.stateKey, JSON.stringify(this.panelSizes));
+		},
+		restoreState: function restoreState() {
+			var stateString = this.getStorage().getItem(this.stateKey);
+			if (stateString) {
+				this.panelSizes = JSON.parse(stateString);
+				return true;
+			}
+			return false;
+		},
+		resetState: function resetState() {
+			this.initializePanels();
+		}
+	},
+	computed: {
+		panels: function panels() {
+			var _this$$slots$default, _this$$slots, _this5 = this;
+			var panels = [];
+			(_this$$slots$default = (_this$$slots = this.$slots)["default"]) === null || _this$$slots$default === void 0 || _this$$slots$default.call(_this$$slots).forEach(function(child) {
+				if (_this5.isSplitterPanel(child)) panels.push(child);
+				else if (child.children instanceof Array) child.children.forEach(function(nestedChild) {
+					if (_this5.isSplitterPanel(nestedChild)) panels.push(nestedChild);
+				});
+			});
+			return panels;
+		},
+		panelSizeConfig: function panelSizeConfig() {
+			var _this6 = this;
+			return this.panels.map(function(panel) {
+				return _this6.getPanelSize(panel);
+			}).join(",");
+		},
+		panelIds: function panelIds() {
+			var _this7 = this;
+			return this.panels.map(function(_, i) {
+				return "".concat(_this7.$id, "_panel_").concat(i);
+			});
+		},
+		gutterStyle: function gutterStyle() {
+			if (this.horizontal) return { width: this.gutterSize + "px" };
+			else return { height: this.gutterSize + "px" };
+		},
+		horizontal: function horizontal() {
+			return this.layout === "horizontal";
+		},
+		getPTOptions: function getPTOptions() {
+			var _this$$parentInstance;
+			return { context: { nested: (_this$$parentInstance = this.$parentInstance) === null || _this$$parentInstance === void 0 ? void 0 : _this$$parentInstance.nestedState } };
+		},
+		dataP: function dataP() {
+			var _this$$parentInstance2;
+			return c(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, this.layout, this.layout), "nested", ((_this$$parentInstance2 = this.$parentInstance) === null || _this$$parentInstance2 === void 0 ? void 0 : _this$$parentInstance2.nestedState) != null), "resizing", this.resizing), "disabled", this.disabled));
+		}
+	}
+};
+var _hoisted_1 = [
+	"data-orientation",
+	"data-resizing",
+	"data-disabled",
+	"data-p"
+];
+var _hoisted_2 = [
+	"tabindex",
+	"aria-orientation",
+	"aria-valuenow",
+	"aria-valuemin",
+	"aria-valuemax",
+	"aria-controls",
+	"aria-disabled",
+	"onPointerdown",
+	"onKeydown",
+	"data-orientation",
+	"data-resizing",
+	"data-disabled",
+	"data-p"
+];
+var _hoisted_3 = ["data-orientation", "data-p"];
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+	return openBlock(), createElementBlock("div", mergeProps({
+		"class": _ctx.cx("root"),
+		"data-orientation": _ctx.layout,
+		"data-resizing": $data.resizing ? "" : void 0,
+		"data-disabled": _ctx.disabled ? "" : void 0
+	}, _ctx.ptmi("root", $options.getPTOptions), { "data-p": $options.dataP }), [(openBlock(true), createElementBlock(Fragment, null, renderList($options.panels, function(panel, i) {
+		var _$data$panelSizes$i;
+		return openBlock(), createElementBlock(Fragment, { key: i }, [(openBlock(), createBlock(resolveDynamicComponent(panel), { tabindex: "-1" })), i !== $options.panels.length - 1 ? (openBlock(), createElementBlock("div", mergeProps({
+			key: 0,
+			ref_for: true,
+			ref: "gutter",
+			"class": _ctx.cx("gutter"),
+			style: {
+				touchAction: "none",
+				userSelect: "none"
+			},
+			role: "separator",
+			tabindex: $options.isGutterDisabled(i) ? -1 : 0,
+			"aria-orientation": _ctx.layout,
+			"aria-valuenow": Math.round((_$data$panelSizes$i = $data.panelSizes[i]) !== null && _$data$panelSizes$i !== void 0 ? _$data$panelSizes$i : 0),
+			"aria-valuemin": Math.round($options.getPanelMinSize(i)),
+			"aria-valuemax": Math.round(100 - $options.getPanelMinSize(i + 1)),
+			"aria-controls": $options.ariaControlsFor(i),
+			"aria-disabled": $options.isGutterDisabled(i) || void 0,
+			onPointerdown: function onPointerdown($event) {
+				return $options.onGutterPointerDown($event, i);
+			},
+			onKeydown: function onKeydown($event) {
+				return $options.onGutterKeyDown($event, i);
+			},
+			onKeyup: _cache[0] || (_cache[0] = function() {
+				return $options.onGutterKeyUp && $options.onGutterKeyUp.apply($options, arguments);
+			}),
+			"data-orientation": _ctx.layout,
+			"data-resizing": $data.resizing && $data.prevPanelIndex === i ? "" : void 0,
+			"data-disabled": $options.isGutterDisabled(i) ? "" : void 0,
+			"data-p": $options.dataP
+		}, { ref_for: true }, _ctx.ptm("gutter")), [createElementVNode("div", mergeProps({
+			"class": _ctx.cx("gutterHandle"),
+			style: [$options.gutterStyle],
+			"data-orientation": _ctx.layout,
+			"data-p": $options.dataP
+		}, { ref_for: true }, _ctx.ptm("gutterHandle")), null, 16, _hoisted_3)], 16, _hoisted_2)) : createCommentVNode("", true)], 64);
+	}), 128))], 16, _hoisted_1);
+}
+script.render = render;
+
+export { script as default };
+//# sourceMappingURL=splitter-9l86cIRb.mjs.map

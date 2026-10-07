@@ -1,0 +1,595 @@
+import { e as et, B as BaseStyle } from '../virtual/entry.mjs';
+import { s as script$3 } from './basecomponent-xyj7Pl8r.mjs';
+import script$2 from './menu-Mucn0oAO.mjs';
+import { mergeProps, resolveComponent, openBlock, createBlock, resolveDynamicComponent, withCtx, createElementVNode, renderSlot, createElementBlock, createTextVNode, toDisplayString, createCommentVNode, createVNode, normalizeStyle, normalizeClass, createSlots, normalizeProps, guardReactiveProps } from 'vue';
+import 'nostics';
+import 'nostics/formatters/ansi';
+import '../nitro/nitro.mjs';
+import 'node:http';
+import 'node:https';
+import 'node:events';
+import 'node:buffer';
+import 'node:fs';
+import 'node:path';
+import 'node:crypto';
+import '@primevue/core/base/style';
+import '@primevue/core/basecomponent/style';
+import '@primeuix/styles/autocomplete';
+import '@primeuix/utils/object';
+import '@primeuix/styles/cascadeselect';
+import '@primeuix/styles/checkbox';
+import '@primeuix/styles/checkboxgroup';
+import '@primeuix/styles/colorpicker';
+import '@primeuix/styles/datepicker';
+import '@primeuix/styles/floatlabel';
+import '@primeuix/styles/iconfield';
+import '@primeuix/styles/iftalabel';
+import '@primeuix/styles/inputcolor';
+import '@primeuix/styles/inputgroup';
+import '@primeuix/styles/inputnumber';
+import '@primeuix/styles/inputotp';
+import '@primeuix/styles/inputtags';
+import '@primeuix/styles/inputtext';
+import '@primeuix/styles/knob';
+import '@primeuix/styles/label';
+import '@primeuix/styles/listbox';
+import '@primeuix/styles/multiselect';
+import '@primeuix/styles/password';
+import '@primeuix/styles/radiobutton';
+import '@primeuix/styles/radiobuttongroup';
+import '@primeuix/styles/rating';
+import '@primeuix/styles/select';
+import '@primeuix/styles/selectbutton';
+import '@primeuix/styles/slider';
+import '@primeuix/styles/textarea';
+import '@primeuix/styles/togglebutton';
+import '@primeuix/styles/toggleswitch';
+import '@primeuix/styles/treeselect';
+import '@primeuix/styles/button';
+import '@primeuix/styles/buttongroup';
+import '@primeuix/styles/speeddial';
+import '@primeuix/styles/splitbutton';
+import '@primeuix/styles/datatable';
+import '@primeuix/styles/dataview';
+import '@primeuix/styles/orderlist';
+import '@primeuix/styles/organizationchart';
+import '@primeuix/styles/paginator';
+import '@primeuix/styles/picklist';
+import '@primeuix/styles/tree';
+import '@primeuix/styles/treetable';
+import '@primeuix/styles/timeline';
+import '@primeuix/styles/virtualscroller';
+import '@primeuix/styles/accordion';
+import '@primeuix/styles/card';
+import '@primeuix/styles/divider';
+import '@primeuix/styles/fieldset';
+import '@primeuix/styles/panel';
+import '@primeuix/styles/scrollarea';
+import '@primeuix/styles/scrollpanel';
+import '@primeuix/styles/splitter';
+import '@primeuix/styles/stepper';
+import '@primeuix/styles/tabs';
+import '@primeuix/styles/toolbar';
+import '@primeuix/styles/confirmdialog';
+import '@primeuix/styles/confirmpopup';
+import '@primeuix/styles/dialog';
+import '@primeuix/styles/drawer';
+import '@primeuix/styles/popover';
+import '@primeuix/styles/fileupload';
+import '@primeuix/styles/breadcrumb';
+import '@primeuix/styles/commandmenu';
+import '@primeuix/styles/contextmenu';
+import '@primeuix/styles/dock';
+import '@primeuix/styles/menu';
+import '@primeuix/styles/menubar';
+import '@primeuix/styles/megamenu';
+import '@primeuix/styles/panelmenu';
+import '@primeuix/styles/sidebar';
+import '@primeuix/styles/steps';
+import '@primeuix/styles/tieredmenu';
+import '@primeuix/styles/message';
+import '@primeuix/styles/toast';
+import '@primeuix/styles/carousel';
+import '@primeuix/styles/galleria';
+import '@primeuix/styles/gallery';
+import '@primeuix/styles/compare';
+import '@primeuix/styles/image';
+import '@primeuix/styles/imagecompare';
+import '@primeuix/styles/avatar';
+import '@primeuix/styles/badge';
+import '@primeuix/styles/blockui';
+import '@primeuix/styles/chip';
+import '@primeuix/styles/inplace';
+import '@primeuix/styles/metergroup';
+import '@primeuix/styles/overlaybadge';
+import '@primeuix/styles/scrolltop';
+import '@primeuix/styles/skeleton';
+import '@primeuix/styles/progressbar';
+import '@primeuix/styles/tag';
+import '@primeuix/styles/terminal';
+import '@primevue/forms/form/style';
+import '@primevue/forms/formfield/style';
+import '@primeuix/styles/tooltip';
+import '@primeuix/styles/ripple';
+import '@primeuix/styled';
+import 'node:url';
+import '@iconify/utils';
+import 'consola';
+import 'vue-router';
+import '@vue/shared';
+import 'pinia';
+import '@iconify/vue';
+import 'vue/server-renderer';
+import 'unhead/utils';
+import '../routes/renderer.mjs';
+import 'unhead/server';
+import 'unhead/legacy';
+import 'unhead/plugins';
+import 'vue-bundle-renderer/runtime';
+import 'devalue';
+import './classnames-ryN3v2bf.mjs';
+import './zindex-BQqkRR0M.mjs';
+import './chevron-down-3cVYzQrF.mjs';
+import './core-aCRgtkIU.mjs';
+import './ripple-Bhb3fhdC.mjs';
+import './basedirective-BlCM3Le7.mjs';
+import './uuid-Dh44iNNj.mjs';
+import './utils-CwiYQ8nb.mjs';
+import './overlayeventbus-CuL2f427.mjs';
+import './portal-BlowhyOz.mjs';
+
+//#endregion
+//#region node_modules/.pnpm/primevue@5.0.2_vue@3.5.43/node_modules/primevue/commandmenu/style/index.mjs
+var CommandMenuStyle = BaseStyle.extend({
+	name: "commandmenu",
+	style: "\n    .p-commandmenu {\n        position: relative;\n        display: flex;\n        flex-direction: column;\n        overflow: hidden;\n        height: dt('commandmenu.height');\n        background: dt('commandmenu.background');\n        border: 1px solid dt('commandmenu.border.color');\n        border-radius: dt('commandmenu.border.radius');\n    }\n\n    .p-commandmenu-header {\n        background: dt('commandmenu.header.background');\n        padding: dt('commandmenu.header.padding');\n        border-bottom: 1px solid dt('commandmenu.header.border.color');\n    }\n\n    .p-commandmenu-input {\n        width: 100%;\n        outline: none;\n        background: transparent;\n        border: 0 none;\n        padding: dt('commandmenu.input.padding');\n        font-size: dt('commandmenu.input.font.size');\n        font-weight: dt('commandmenu.input.font.weight');\n        color: dt('commandmenu.input.color');\n        appearance: none;\n        font-family: inherit;\n        font-feature-settings: inherit;\n        font-variation-settings: inherit;\n    }\n\n    .p-commandmenu-input::placeholder {\n        color: dt('commandmenu.input.placeholder.color');\n    }\n\n    .p-commandmenu-list {\n        position: relative;\n        flex: 1;\n        display: flex;\n        flex-direction: column;\n        overflow-x: hidden;\n        overflow-y: auto;\n        scroll-padding-block: 0.5rem;\n        padding: dt('commandmenu.list.padding');\n    }\n\n    .p-commandmenu-list:focus-visible {\n        outline: none;\n    }\n\n    .p-commandmenu-empty-message {\n        text-align: center;\n        padding: dt('commandmenu.empty.padding');\n        color: dt('commandmenu.empty.color');\n    }\n\n    .p-commandmenu-footer {\n        padding: dt('commandmenu.footer.padding');\n        background: dt('commandmenu.footer.background');\n        border-top: 1px solid dt('commandmenu.footer.border.color');\n    }\n\n    .p-commandmenu .p-menu {\n        border: 0;\n        border-radius: 0;\n        background: transparent;\n    }\n",
+	classes: {
+		root: "p-commandmenu p-component",
+		header: "p-commandmenu-header",
+		input: "p-commandmenu-input",
+		list: "p-commandmenu-list",
+		emptyMessage: "p-commandmenu-empty-message",
+		footer: "p-commandmenu-footer"
+	}
+});
+//#endregion
+//#region node_modules/.pnpm/primevue@5.0.2_vue@3.5.43/node_modules/primevue/commandmenu/index.mjs
+var script$1 = {
+	name: "BaseCommandMenu",
+	"extends": script$3,
+	props: {
+		model: {
+			type: Array,
+			"default": null
+		},
+		search: {
+			type: String,
+			"default": null
+		},
+		filter: {
+			type: Function,
+			"default": null
+		},
+		placeholder: {
+			type: String,
+			"default": null
+		},
+		emptyMessage: {
+			type: String,
+			"default": null
+		},
+		emptyFilterMessage: {
+			type: String,
+			"default": null
+		},
+		menuClass: {
+			type: [
+				String,
+				Object,
+				Array
+			],
+			"default": null
+		},
+		menuStyle: {
+			type: [
+				String,
+				Object,
+				Array
+			],
+			"default": null
+		},
+		ariaLabel: {
+			type: String,
+			"default": null
+		},
+		ariaLabelledby: {
+			type: String,
+			"default": null
+		},
+		as: {
+			type: [String, Object],
+			"default": "DIV"
+		},
+		asChild: {
+			type: Boolean,
+			"default": false
+		}
+	},
+	style: CommandMenuStyle,
+	provide: function provide() {
+		return {
+			$pcCommandMenu: this,
+			$parentInstance: this
+		};
+	}
+};
+function _typeof(o) {
+	"@babel/helpers - typeof";
+	return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(o) {
+		return typeof o;
+	} : function(o) {
+		return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o;
+	}, _typeof(o);
+}
+function _createForOfIteratorHelper(r, e) {
+	var t = "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"];
+	if (!t) {
+		if (Array.isArray(r) || (t = _unsupportedIterableToArray(r)) || e) {
+			t && (r = t);
+			var _n = 0, F = function F() {};
+			return {
+				s: F,
+				n: function n() {
+					return _n >= r.length ? { done: true } : {
+						done: false,
+						value: r[_n++]
+					};
+				},
+				e: function e(r) {
+					throw r;
+				},
+				f: F
+			};
+		}
+		throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+	}
+	var o, a = true, u = false;
+	return {
+		s: function s() {
+			t = t.call(r);
+		},
+		n: function n() {
+			var r = t.next();
+			return a = r.done, r;
+		},
+		e: function e(r) {
+			u = true, o = r;
+		},
+		f: function f() {
+			try {
+				a || null == t["return"] || t["return"]();
+			} finally {
+				if (u) throw o;
+			}
+		}
+	};
+}
+function _unsupportedIterableToArray(r, a) {
+	if (r) {
+		if ("string" == typeof r) return _arrayLikeToArray(r, a);
+		var t = {}.toString.call(r).slice(8, -1);
+		return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0;
+	}
+}
+function _arrayLikeToArray(r, a) {
+	(null == a || a > r.length) && (a = r.length);
+	for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e];
+	return n;
+}
+function ownKeys(e, r) {
+	var t = Object.keys(e);
+	if (Object.getOwnPropertySymbols) {
+		var o = Object.getOwnPropertySymbols(e);
+		r && (o = o.filter(function(r) {
+			return Object.getOwnPropertyDescriptor(e, r).enumerable;
+		})), t.push.apply(t, o);
+	}
+	return t;
+}
+function _objectSpread(e) {
+	for (var r = 1; r < arguments.length; r++) {
+		var t = null != arguments[r] ? arguments[r] : {};
+		r % 2 ? ownKeys(Object(t), true).forEach(function(r) {
+			_defineProperty(e, r, t[r]);
+		}) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r) {
+			Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r));
+		});
+	}
+	return e;
+}
+function _defineProperty(e, r, t) {
+	return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, {
+		value: t,
+		enumerable: true,
+		configurable: true,
+		writable: true
+	}) : e[r] = t, e;
+}
+function _toPropertyKey(t) {
+	var i = _toPrimitive(t, "string");
+	return "symbol" == _typeof(i) ? i : i + "";
+}
+function _toPrimitive(t, r) {
+	if ("object" != _typeof(t) || !t) return t;
+	var e = t[Symbol.toPrimitive];
+	if (void 0 !== e) {
+		var i = e.call(t, r);
+		if ("object" != _typeof(i)) return i;
+		throw new TypeError("@@toPrimitive must return a primitive value.");
+	}
+	return ("string" === r ? String : Number)(t);
+}
+var script = {
+	name: "CommandMenu",
+	"extends": script$1,
+	inheritAttrs: false,
+	emits: ["update:search", "select"],
+	data: function data() {
+		var _this$search;
+		return {
+			d_search: (_this$search = this.search) !== null && _this$search !== void 0 ? _this$search : "",
+			focusedOptionId: null
+		};
+	},
+	watch: { search: function search(newValue) {
+		var normalizedSearch = newValue !== null && newValue !== void 0 ? newValue : "";
+		if (this.d_search !== normalizedSearch) {
+			this.d_search = normalizedSearch;
+			this.resetFocusedOption();
+		}
+	} },
+	mounted: function mounted() {
+		if (this.$refs.menu) this.focusFirstOption();
+	},
+	methods: {
+		onInputChange: function onInputChange(event) {
+			this.updateSearch(event.target.value);
+		},
+		updateSearch: function updateSearch(value) {
+			var normalizedSearch = value !== null && value !== void 0 ? value : "";
+			this.d_search = normalizedSearch;
+			this.$emit("update:search", normalizedSearch);
+			this.resetFocusedOption();
+		},
+		resetFocusedOption: function resetFocusedOption() {
+			var _this = this;
+			this.$nextTick(function() {
+				_this.focusFirstOption();
+			});
+		},
+		focusFirstOption: function focusFirstOption() {
+			var _menu$focusedOptionId;
+			var menu = this.$refs.menu;
+			if (!menu) {
+				this.focusedOptionId = null;
+				return;
+			}
+			menu.focused = true;
+			if (!menu.focusedOptionId) menu.changeFocusedOptionIndex(0);
+			this.focusedOptionId = (_menu$focusedOptionId = menu.focusedOptionId) !== null && _menu$focusedOptionId !== void 0 ? _menu$focusedOptionId : null;
+		},
+		onInputKeyDown: function onInputKeyDown(event) {
+			var _menu$focusedOptionId2;
+			var menu = this.$refs.menu;
+			menu.onListKeyDown(event);
+			this.focusedOptionId = (_menu$focusedOptionId2 = menu === null || menu === void 0 ? void 0 : menu.focusedOptionId) !== null && _menu$focusedOptionId2 !== void 0 ? _menu$focusedOptionId2 : null;
+			if (this.focusedOptionId) this.scrollFocusedOptionInView();
+		},
+		scrollFocusedOptionInView: function scrollFocusedOptionInView() {
+			var _this2 = this;
+			requestAnimationFrame(function() {
+				var _findSingle, _findSingle$scrollInt;
+				var menu = _this2.$refs.menu;
+				if (!menu || !_this2.focusedOptionId) return;
+				(_findSingle = et(menu.list, "[id=\"".concat(_this2.focusedOptionId, "\"]"))) === null || _findSingle === void 0 || (_findSingle$scrollInt = _findSingle.scrollIntoView) === null || _findSingle$scrollInt === void 0 || _findSingle$scrollInt.call(_findSingle, {
+					block: "nearest",
+					inline: "nearest"
+				});
+			});
+		},
+		wrapCommand: function wrapCommand(item) {
+			var _this3 = this;
+			return _objectSpread(_objectSpread({}, item), {}, { command: function command(ev) {
+				var _item$command;
+				(_item$command = item.command) === null || _item$command === void 0 || _item$command.call(item, ev);
+				_this3.$emit("select", {
+					originalEvent: ev.originalEvent,
+					item
+				});
+			} });
+		},
+		wrapCommands: function wrapCommands(items) {
+			var _this4 = this;
+			return items.map(function(item) {
+				return item.items ? _objectSpread(_objectSpread({}, item), {}, { items: _this4.wrapCommands(item.items) }) : _this4.wrapCommand(item);
+			});
+		},
+		filterModel: function filterModel(items) {
+			var out = [];
+			var _iterator = _createForOfIteratorHelper(items), _step;
+			try {
+				for (_iterator.s(); !(_step = _iterator.n()).done;) {
+					var item = _step.value;
+					if (item.items) {
+						var children = this.filterModel(item.items);
+						if (children.length) out.push(_objectSpread(_objectSpread({}, item), {}, { items: children }));
+					} else if (item.separator) continue;
+					else {
+						var score = this.scoreItem(item, this.d_search);
+						if (score > 0) out.push({
+							wrapped: this.wrapCommand(item),
+							score
+						});
+					}
+				}
+			} catch (err) {
+				_iterator.e(err);
+			} finally {
+				_iterator.f();
+			}
+			out.sort(function(a, b) {
+				var _b$score, _a$score;
+				return ((_b$score = b.score) !== null && _b$score !== void 0 ? _b$score : 0) - ((_a$score = a.score) !== null && _a$score !== void 0 ? _a$score : 0);
+			});
+			return out.map(function(e) {
+				var _e$wrapped;
+				return (_e$wrapped = e.wrapped) !== null && _e$wrapped !== void 0 ? _e$wrapped : e;
+			});
+		},
+		scoreItem: function scoreItem(item, search) {
+			var _this$filter;
+			return ((_this$filter = this.filter) !== null && _this$filter !== void 0 ? _this$filter : this.defaultScorer)(item, search) || 0;
+		},
+		defaultScorer: function defaultScorer(item, search) {
+			if (!search) return 1;
+			var s = String(search).toLowerCase();
+			if (String(this.resolveItemLabel(item)).toLowerCase().includes(s)) return 1;
+			var _iterator2 = _createForOfIteratorHelper(Array.isArray(item.keywords) ? item.keywords : item.keywords ? [item.keywords] : []), _step2;
+			try {
+				for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+					var kw = _step2.value;
+					if (String(kw !== null && kw !== void 0 ? kw : "").toLowerCase().includes(s)) return 1;
+				}
+			} catch (err) {
+				_iterator2.e(err);
+			} finally {
+				_iterator2.f();
+			}
+			return 0;
+		},
+		resolveItemLabel: function resolveItemLabel(item) {
+			var _item$label;
+			return typeof item.label === "function" ? item.label() : (_item$label = item.label) !== null && _item$label !== void 0 ? _item$label : "";
+		}
+	},
+	computed: {
+		menuId: function menuId() {
+			return "".concat(this.$id, "_menu");
+		},
+		listId: function listId() {
+			return "".concat(this.menuId, "_list");
+		},
+		inputAttrs: function inputAttrs() {
+			return mergeProps({
+				role: "combobox",
+				"aria-autocomplete": "list",
+				"aria-expanded": true,
+				"aria-controls": this.filteredModel.length ? this.listId : void 0,
+				"aria-activedescendant": this.focusedOptionId,
+				autocomplete: "off",
+				placeholder: this.placeholder,
+				onKeydown: this.onInputKeyDown
+			}, this.ptm("input"));
+		},
+		inputProps: function inputProps() {
+			return _objectSpread(_objectSpread({}, this.inputAttrs), {}, {
+				value: this.d_search,
+				onInput: this.onInputChange
+			});
+		},
+		isFiltering: function isFiltering() {
+			return !!(this.d_search && this.d_search.length);
+		},
+		emptyMessageText: function emptyMessageText() {
+			var _ref, _this$emptyMessage, _this$$primevue;
+			return (_ref = (_this$emptyMessage = this.emptyMessage) !== null && _this$emptyMessage !== void 0 ? _this$emptyMessage : (_this$$primevue = this.$primevue) === null || _this$$primevue === void 0 || (_this$$primevue = _this$$primevue.config) === null || _this$$primevue === void 0 || (_this$$primevue = _this$$primevue.locale) === null || _this$$primevue === void 0 ? void 0 : _this$$primevue.emptyMessage) !== null && _ref !== void 0 ? _ref : "";
+		},
+		emptyFilterMessageText: function emptyFilterMessageText() {
+			var _ref2, _ref3, _this$emptyFilterMess, _this$$primevue2, _this$$primevue3;
+			return (_ref2 = (_ref3 = (_this$emptyFilterMess = this.emptyFilterMessage) !== null && _this$emptyFilterMess !== void 0 ? _this$emptyFilterMess : (_this$$primevue2 = this.$primevue) === null || _this$$primevue2 === void 0 || (_this$$primevue2 = _this$$primevue2.config) === null || _this$$primevue2 === void 0 || (_this$$primevue2 = _this$$primevue2.locale) === null || _this$$primevue2 === void 0 ? void 0 : _this$$primevue2.emptySearchMessage) !== null && _ref3 !== void 0 ? _ref3 : (_this$$primevue3 = this.$primevue) === null || _this$$primevue3 === void 0 || (_this$$primevue3 = _this$$primevue3.config) === null || _this$$primevue3 === void 0 || (_this$$primevue3 = _this$$primevue3.locale) === null || _this$$primevue3 === void 0 ? void 0 : _this$$primevue3.emptyFilterMessage) !== null && _ref2 !== void 0 ? _ref2 : "";
+		},
+		filteredModel: function filteredModel() {
+			var _this$model;
+			var source = (_this$model = this.model) !== null && _this$model !== void 0 ? _this$model : [];
+			return this.d_search ? this.filterModel(source) : this.wrapCommands(source);
+		}
+	},
+	components: { Menu: script$2 }
+};
+var _hoisted_1 = ["value"];
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+	var _component_Menu = resolveComponent("Menu");
+	return !_ctx.asChild ? (openBlock(), createBlock(resolveDynamicComponent(_ctx.as), mergeProps({
+		key: 0,
+		"class": _ctx.cx("root")
+	}, _ctx.ptmi("root")), {
+		"default": withCtx(function() {
+			return [
+				createElementVNode("div", mergeProps({ "class": _ctx.cx("header") }, _ctx.ptm("header")), [renderSlot(_ctx.$slots, "header", {
+					value: $data.d_search,
+					inputProps: $options.inputProps
+				}, function() {
+					return [createElementVNode("input", mergeProps({
+						ref: "input",
+						type: "text",
+						role: "combobox",
+						value: $data.d_search,
+						"class": _ctx.cx("input")
+					}, $options.inputAttrs, { onInput: _cache[0] || (_cache[0] = function() {
+						return $options.onInputChange && $options.onInputChange.apply($options, arguments);
+					}) }), null, 16, _hoisted_1)];
+				})], 16),
+				$options.filteredModel.length === 0 ? (openBlock(), createElementBlock("div", mergeProps({
+					key: 0,
+					"class": _ctx.cx("emptyMessage")
+				}, _ctx.ptm("emptyMessage")), [$options.isFiltering ? renderSlot(_ctx.$slots, "emptyfilter", {}, function() {
+					return [createTextVNode(toDisplayString($options.emptyFilterMessageText), 1)];
+				}, void 0, 0) : renderSlot(_ctx.$slots, "empty", {}, function() {
+					return [createTextVNode(toDisplayString($options.emptyMessageText), 1)];
+				}, void 0, 1)], 16)) : createCommentVNode("", true),
+				createVNode(_component_Menu, {
+					ref: "menu",
+					id: $options.menuId,
+					model: $options.filteredModel,
+					popup: false,
+					"aria-label": _ctx.ariaLabel,
+					"aria-labelledby": _ctx.ariaLabelledby,
+					"class": normalizeClass([_ctx.cx("list"), _ctx.menuClass]),
+					style: normalizeStyle(_ctx.menuStyle),
+					pt: _ctx.ptm("pcMenu"),
+					unstyled: _ctx.unstyled
+				}, createSlots({ _: 2 }, [_ctx.$slots.item ? {
+					name: "item",
+					fn: withCtx(function(slotProps) {
+						return [renderSlot(_ctx.$slots, "item", normalizeProps(guardReactiveProps(slotProps)))];
+					}),
+					key: "0"
+				} : void 0, _ctx.$slots.submenulabel ? {
+					name: "submenulabel",
+					fn: withCtx(function(slotProps) {
+						return [renderSlot(_ctx.$slots, "submenulabel", normalizeProps(guardReactiveProps(slotProps)))];
+					}),
+					key: "1"
+				} : void 0]), 1032, [
+					"id",
+					"model",
+					"aria-label",
+					"aria-labelledby",
+					"class",
+					"style",
+					"pt",
+					"unstyled"
+				]),
+				_ctx.$slots.footer ? (openBlock(), createElementBlock("div", mergeProps({
+					key: 1,
+					"class": _ctx.cx("footer")
+				}, _ctx.ptm("footer")), [renderSlot(_ctx.$slots, "footer", { items: $options.filteredModel })], 16)) : createCommentVNode("", true)
+			];
+		}),
+		_: 3
+	}, 16, ["class"])) : renderSlot(_ctx.$slots, "default", { "class": normalizeClass(_ctx.cx("root")) }, void 0, void 0, 1);
+}
+script.render = render;
+
+export { script as default };
+//# sourceMappingURL=commandmenu-DpIz8sJM.mjs.map

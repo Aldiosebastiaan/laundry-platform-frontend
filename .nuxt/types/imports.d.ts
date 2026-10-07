@@ -23,6 +23,7 @@ declare global {
   const defineNuxtLink: typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/components/nuxt-link').defineNuxtLink
   const defineNuxtPlugin: typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/nuxt').defineNuxtPlugin
   const defineNuxtRouteMiddleware: typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/router').defineNuxtRouteMiddleware
+  const definePageMeta: typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/pages').definePageMeta
   const definePayloadPlugin: typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/nuxt').definePayloadPlugin
   const definePayloadReducer: typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/payload').definePayloadReducer
   const definePayloadReviver: typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/payload').definePayloadReviver
@@ -52,8 +53,8 @@ declare global {
   const nextTick: typeof import('vue').nextTick
   const onActivated: typeof import('vue').onActivated
   const onBeforeMount: typeof import('vue').onBeforeMount
-  const onBeforeRouteLeave: typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/router').onBeforeRouteLeave
-  const onBeforeRouteUpdate: typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/router').onBeforeRouteUpdate
+  const onBeforeRouteLeave: typeof import('vue-router').onBeforeRouteLeave
+  const onBeforeRouteUpdate: typeof import('vue-router').onBeforeRouteUpdate
   const onBeforeUnmount: typeof import('vue').onBeforeUnmount
   const onBeforeUpdate: typeof import('vue').onBeforeUpdate
   const onDeactivated: typeof import('vue').onDeactivated
@@ -103,6 +104,8 @@ declare global {
   const useAppConfig: typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/config').useAppConfig
   const useAsyncData: typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/asyncData').useAsyncData
   const useAttrs: typeof import('vue').useAttrs
+  const useAuthStore: typeof import('../../app/stores/auth').useAuthStore
+  const useBuilderStore: typeof import('../../app/stores/builder').useBuilderStore
   const useConfirm: typeof import('primevue/useconfirm').useConfirm
   const useCookie: typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/cookie').useCookie
   const useCssModule: typeof import('vue').useCssModule
@@ -117,10 +120,13 @@ declare global {
   const useLayout: typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/layout').useLayout
   const useLazyAsyncData: typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/asyncData').useLazyAsyncData
   const useLazyFetch: typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/fetch').useLazyFetch
+  const useLink: typeof import('vue-router').useLink
   const useLoadingIndicator: typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/loading-indicator').useLoadingIndicator
+  const useMenuStore: typeof import('../../app/stores/menu').useMenuStore
   const useModel: typeof import('vue').useModel
   const useNuxtApp: typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/nuxt').useNuxtApp
   const useNuxtData: typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/asyncData').useNuxtData
+  const useNuxtDevTools: typeof import('../../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools').useNuxtDevTools
   const usePinia: typeof import('../../node_modules/.pnpm/@pinia+nuxt@1.0.2_magic-string@1.4.3_magicast@0.5.5_pinia@4.0.3_@vue+devtools-api@8.2.1_03c5cd4b9e9afb31f714f2905ddd28fe/node_modules/@pinia/nuxt/dist/runtime/composables').usePinia
   const usePreviewMode: typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/preview').usePreviewMode
   const usePrimeVue: typeof import('primevue/config').usePrimeVue
@@ -205,6 +211,15 @@ declare global {
   // @ts-ignore
   export type { Component, ComponentPublicInstance, ComputedRef, DirectiveBinding, ExtractDefaultPropTypes, ExtractPropTypes, ExtractPublicPropTypes, InjectionKey, PropType, Ref, MaybeRef, MaybeRefOrGetter, VNode, WritableComputedRef } from 'vue'
   import('vue')
+  // @ts-ignore
+  export type { PageMeta } from '../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/pages'
+  import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/pages')
+  // @ts-ignore
+  export type { UserProfile } from '../../app/stores/auth'
+  import('../../app/stores/auth')
+  // @ts-ignore
+  export type { CanvasBlock, CanvasPageSchema } from '../../app/stores/builder'
+  import('../../app/stores/builder')
 }
 // for vue template auto import
 import { UnwrapRef } from 'vue'
@@ -232,6 +247,7 @@ declare module 'vue' {
     readonly defineNuxtLink: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/components/nuxt-link')['defineNuxtLink']>
     readonly defineNuxtPlugin: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/nuxt')['defineNuxtPlugin']>
     readonly defineNuxtRouteMiddleware: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/router')['defineNuxtRouteMiddleware']>
+    readonly definePageMeta: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/pages')['definePageMeta']>
     readonly definePayloadPlugin: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/nuxt')['definePayloadPlugin']>
     readonly definePayloadReducer: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/payload')['definePayloadReducer']>
     readonly definePayloadReviver: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/payload')['definePayloadReviver']>
@@ -261,8 +277,8 @@ declare module 'vue' {
     readonly nextTick: UnwrapRef<typeof import('vue')['nextTick']>
     readonly onActivated: UnwrapRef<typeof import('vue')['onActivated']>
     readonly onBeforeMount: UnwrapRef<typeof import('vue')['onBeforeMount']>
-    readonly onBeforeRouteLeave: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/router')['onBeforeRouteLeave']>
-    readonly onBeforeRouteUpdate: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/router')['onBeforeRouteUpdate']>
+    readonly onBeforeRouteLeave: UnwrapRef<typeof import('vue-router')['onBeforeRouteLeave']>
+    readonly onBeforeRouteUpdate: UnwrapRef<typeof import('vue-router')['onBeforeRouteUpdate']>
     readonly onBeforeUnmount: UnwrapRef<typeof import('vue')['onBeforeUnmount']>
     readonly onBeforeUpdate: UnwrapRef<typeof import('vue')['onBeforeUpdate']>
     readonly onDeactivated: UnwrapRef<typeof import('vue')['onDeactivated']>
@@ -312,6 +328,8 @@ declare module 'vue' {
     readonly useAppConfig: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/config')['useAppConfig']>
     readonly useAsyncData: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/asyncData')['useAsyncData']>
     readonly useAttrs: UnwrapRef<typeof import('vue')['useAttrs']>
+    readonly useAuthStore: UnwrapRef<typeof import('../../app/stores/auth')['useAuthStore']>
+    readonly useBuilderStore: UnwrapRef<typeof import('../../app/stores/builder')['useBuilderStore']>
     readonly useConfirm: UnwrapRef<typeof import('primevue/useconfirm')['useConfirm']>
     readonly useCookie: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/cookie')['useCookie']>
     readonly useCssModule: UnwrapRef<typeof import('vue')['useCssModule']>
@@ -326,10 +344,13 @@ declare module 'vue' {
     readonly useLayout: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/layout')['useLayout']>
     readonly useLazyAsyncData: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/asyncData')['useLazyAsyncData']>
     readonly useLazyFetch: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/fetch')['useLazyFetch']>
+    readonly useLink: UnwrapRef<typeof import('vue-router')['useLink']>
     readonly useLoadingIndicator: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/loading-indicator')['useLoadingIndicator']>
+    readonly useMenuStore: UnwrapRef<typeof import('../../app/stores/menu')['useMenuStore']>
     readonly useModel: UnwrapRef<typeof import('vue')['useModel']>
     readonly useNuxtApp: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/nuxt')['useNuxtApp']>
     readonly useNuxtData: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/asyncData')['useNuxtData']>
+    readonly useNuxtDevTools: UnwrapRef<typeof import('../../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools')['useNuxtDevTools']>
     readonly usePinia: UnwrapRef<typeof import('../../node_modules/.pnpm/@pinia+nuxt@1.0.2_magic-string@1.4.3_magicast@0.5.5_pinia@4.0.3_@vue+devtools-api@8.2.1_03c5cd4b9e9afb31f714f2905ddd28fe/node_modules/@pinia/nuxt/dist/runtime/composables')['usePinia']>
     readonly usePreviewMode: UnwrapRef<typeof import('../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/composables/preview')['usePreviewMode']>
     readonly usePrimeVue: UnwrapRef<typeof import('primevue/config')['usePrimeVue']>

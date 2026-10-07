@@ -14,6 +14,8 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 interface _GlobalComponents {
+  LayoutAppHeader: typeof import("../../app/components/layout/AppHeader.vue")['default']
+  LayoutAppSidebar: typeof import("../../app/components/layout/AppSidebar.vue")['default']
   NuxtWelcome: typeof import("../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/components/welcome.vue")['default']
   NuxtLayout: typeof import("../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/components/nuxt-layout")['default']
   NuxtErrorBoundary: typeof import("../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
@@ -214,7 +216,7 @@ interface _GlobalComponents {
   Terminal: typeof import("primevue/terminal")['default']
   Form: typeof import("@primevue/forms/form")['default']
   FormField: typeof import("@primevue/forms/formfield")['default']
-  NuxtPage: typeof import("../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/pages/runtime/page-placeholder")['default']
+  NuxtPage: typeof import("../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/pages/runtime/page")['default']
   NoScript: typeof import("../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/head/runtime/components")['NoScript']
   Link: typeof import("../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/head/runtime/components")['Link']
   Base: typeof import("../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/head/runtime/components")['Base']
@@ -225,6 +227,8 @@ interface _GlobalComponents {
   Html: typeof import("../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/head/runtime/components")['Html']
   Body: typeof import("../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/head/runtime/components")['Body']
   NuxtIsland: typeof import("../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/components/nuxt-island")['default']
+  LazyLayoutAppHeader: LazyComponent<typeof import("../../app/components/layout/AppHeader.vue")['default']>
+  LazyLayoutAppSidebar: LazyComponent<typeof import("../../app/components/layout/AppSidebar.vue")['default']>
   LazyNuxtWelcome: LazyComponent<typeof import("../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/components/welcome.vue")['default']>
   LazyNuxtLayout: LazyComponent<typeof import("../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
   LazyNuxtErrorBoundary: LazyComponent<typeof import("../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>
@@ -425,7 +429,7 @@ interface _GlobalComponents {
   LazyTerminal: LazyComponent<typeof import("primevue/terminal")['default']>
   LazyForm: LazyComponent<typeof import("@primevue/forms/form")['default']>
   LazyFormField: LazyComponent<typeof import("@primevue/forms/formfield")['default']>
-  LazyNuxtPage: LazyComponent<typeof import("../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/pages/runtime/page-placeholder")['default']>
+  LazyNuxtPage: LazyComponent<typeof import("../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/pages/runtime/page")['default']>
   LazyNoScript: LazyComponent<typeof import("../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/head/runtime/components")['NoScript']>
   LazyLink: LazyComponent<typeof import("../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/head/runtime/components")['Link']>
   LazyBase: LazyComponent<typeof import("../../node_modules/.pnpm/nuxt@4.5.2_@babel+plugin-syntax-jsx@7.29.7_@babel+core@7.29.7_supports-color@10.2.2___@_efec8bb3f615f691c7589e1eec1e9ba0/node_modules/nuxt/dist/head/runtime/components")['Base']>
